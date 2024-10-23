@@ -1,0 +1,202 @@
+/* reset */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*::before,
+*::after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100px;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/* reset */
+body {
+  background: url("/SovietCalc/Source/background.jpg") 0 0 no-repeat;
+  background-position: 100%;
+  background-size: cover;
+}
+.body__calc {
+  background-color: rgb(205, 202, 202);
+  width: 300px;
+  height: 500px;
+  border-radius: 8px;
+  padding: 8px;
+  box-shadow: 8px 8px 8px 8px;
+  user-select: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.calc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1 1 80px;
+}
+.calc__title {
+  padding: 10px 0px 20px 160px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+}
+.calc-logo {
+  font-size: 35px;
+}
+
+.calc__screen {
+  display: grid;
+  align-items: center;
+  max-width: 100%;
+  height: 80px;
+  background-color: black;
+  border: 5px solid #7d0909;
+  border-radius: 5px;
+  margin-top: -115px;
+}
+
+.calc__screen-input {
+  min-width: 100%;
+  display: grid;
+  padding: 10px;
+  justify-items: flex-end;
+  text-align: right;
+  font-size: 3rem;
+  background-color: #000000;
+  color: #7d0909;
+  cursor: default;
+}
+::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #7d0909;
+}
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #7d0909;
+}
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #7d0909;
+}
+:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #7d0909;
+}
+
+.calc__input {
+  padding-bottom: 20px;
+  position: relative;
+}
+.calc__input-decor {
+  position: absolute;
+  top: 38px;
+  left: 7px;
+  pointer-events: none;
+}
+
+.calc__buttons {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  height: 200px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.calc__button-cover {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.calc__button {
+  background-color: rgb(122, 119, 119);
+  height: 18px;
+  width: 45px;
+  border-radius: 5px;
+  margin: 0 auto;
+  cursor: pointer;
+  border-bottom: solid 3px #424040;
+}
+
+.calc__button:active {
+  border-bottom: 0;
+  box-shadow: 0px 0px 1px rgba(23, 23, 23, 0.2);
+  transform: translateY(1px);
+  transition: all 0.1s ease 0s;
+}
+
+.button-red {
+  background-color: #9d0c0c;
+}
+.calc__button-sign {
+  display: grid;
+  justify-content: center;
+  pointer-events: none;
+}
