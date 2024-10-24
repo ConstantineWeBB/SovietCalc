@@ -126,9 +126,7 @@ body {
 
 .calc__screen-input {
   min-width: 100%;
-  display: grid;
   padding: 10px;
-  justify-items: flex-end;
   text-align: right;
   font-size: 3rem;
   background-color: #000000;
